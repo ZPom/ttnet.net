@@ -1,0 +1,22 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: 13px/1.5 Tahoma,Arial,'\5B8B\4F53',sans-serif;
+}
+
+ul, ol, ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    color: #1e71c6;
+    text-decoration: none;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}

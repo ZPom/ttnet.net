@@ -1,0 +1,178 @@
+/* For tablets: (min-width: 600px) and*/
+@media only screen and (max-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    header{
+        border-bottom: 1px solid #e4e4e4;
+        background: #f3f3f3;
+        height: 30px;
+        min-width: 600px;
+        font: 14px/1.8 Tahoma,Arial,"宋体","新細明體","Arial Unicode MS",sans-serif;
+    }
+
+    .top{
+        width: 600px;
+        height: 100%;
+        margin:0 auto;
+    }
+
+    .top a{
+        color: #666;
+    }
+
+    .top a:hover{
+        color: #ffA500;
+    }
+
+    .top .menu-item{
+        float: left;
+        padding: 0 10px;
+        margin-left: -1px;
+    }
+
+    .top li{
+        height: 100%;
+        line-height: 27px;
+        position: relative;
+    }
+
+    /*会员登陆*/
+    .user-nav{
+        float: left;
+        margin-left: 5px;
+        height: 100%;
+    }
+
+    .user-nav .first{
+        padding-left: 0;
+    }
+
+    .user-nav .first a{
+        color: #1e71c6
+    }
+
+    .user-split{
+        position: absolute;
+        height: 17px;
+        line-height: 27px;
+        border-left: 1px solid #999;
+        top: 5px;
+    }
+
+    /*top-搜索*/
+    .mobile-search-nav{
+        float: right;
+        position: relative;
+        right: 10px;
+    }
+
+    .mobile-search-nav .search-input{
+        float: left;
+        border: 0;
+        border-radius: 16px;
+        height: 26px;
+        position: relative;
+        outline:none;
+        top:1px;
+        width: 0;
+        -webkit-transition: all .2s;
+        text-indent: 10px;
+    }
+
+    .mobile-search-nav .search-input-show{
+        /*border: 1px solid #999;*/
+        width: 173px;
+    }
+
+    .mobile-search-nav isearch{
+        float: right;
+        position: relative;
+        top: 7px;
+        left: -22px;
+    }
+
+    /*站点导航*/
+    .site-nav{
+        display: none;
+    }
+
+    .mobile-inquiry-cart{
+        float: right;
+        overflow: hidden;
+        position: relative;
+        right: 30px;
+        top: 2px;
+    }
+
+    .mobile-inquiry-cart icart{
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+    }
+
+    .moblie-menu{
+        position: relative;
+        float: right;
+        top: 5px;
+        left:-10px;
+        cursor: pointer;
+        -webkit-transition:all .3s;
+        -o-transition:all .3s;
+        -moz-transition: all .3s;
+        transition:all .3s;
+    }
+
+    .moblie-menu-hover{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+
+    .moblie-menu-wrap{
+        position: relative;
+        float: right;
+        width: 35px;
+        height: 100%;
+        right: 30px;
+    }
+
+    .mobile-site-nav{
+        position: absolute;
+        width: 70px;
+        top: 30px;
+        left: -10px;
+        height: 0;
+        overflow: hidden;
+        transition: height .3s;
+        -webkit-transition: height .3s;
+        -moz-transition: height .3s;
+        -o-transition: height .3s;
+    }
+
+    .mobile-site-nav-show{
+        height: 105px;
+    }
+
+    .mobile-site-nav li{
+        clear: both;
+        height: auto;
+        font: 12px/1.8 Tahoma,Arial,"宋体","新細明體","Arial Unicode MS",sans-serif;
+    }
+
+    /*desktop搜索区域*/
+    .search-area{
+        display: none;
+    }
+}

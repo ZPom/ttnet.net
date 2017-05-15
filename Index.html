@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文笔天天网</title>
+    <script src="Js/jquery-1.9.1.js"></script>
+    <!--[if lt IE9]>
+    <script src="Js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="Js/jquery.extends.js"></script>
+    <link href="Css/icon.css" rel="stylesheet">
+    <link href="Css/index.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="Css/tablets.css"/>
+    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="Css/desktop.css"/>
+</head>
+<body>
+<!--头部-->
+<header class="col-12 col-m-12">
+    <div class="top" media="screen">
+        <!--<span class="icon-search"></span>-->
+        <ul class="user-nav">
+            <li class="first menu-item"><a href="javascript:;">會員登入</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;">加入會員</a></li>
+        </ul>
+        <ul class="site-nav">
+            <li class="menu-item"><icart></icart><a href="javascript:;">詢價車(<b>0</b>)</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;">English</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;">簡體站</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;">輕牌質優</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="ttnet menu-item" id="site-ttnet"><a href="javascript:;">我的文筆</a><iarrow class="iarrow" id="ttnet-arrow"></iarrow></li>
+        </ul>
+        <div class="moblie-menu-wrap" id="moblie-menu-wrap">
+            <imenu class="moblie-menu" id="moblie-menu"></imenu>
+            <ul class="mobile-site-nav" id="mobile-site-nav">
+                <li class="menu-item"><a href="javascript:;">English</a></li>
+                <li class="menu-item"><a href="javascript:;">簡體站</a></li>
+                <li class="menu-item"><a href="javascript:;">輕牌質優</a></li>
+                <li class="ttnet menu-item"><a href="javascript:;">我的文筆</a></li>
+            </ul>
+        </div>
+        <ul class="mobile-inquiry-cart">
+            <li class="menu-item"><a href="javascript:;"><icart></icart>(<b>0</b>)</a></li>
+        </ul>
+        <ul class="mobile-search-nav">
+            <li><input type="text" class="search-input" id="search-input"/><isearch id="icon-search"></isearch></li>
+        </ul>
+    </div>
+</header>
+
+<div class="search-area top col-12 col-m-12">
+    <div class="logo"></div>
+    <div class="search">
+        <ul class="ser-tab">
+            <li class="menu-item"><b>找產品</b></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;"> 買買看板</a></li>
+            <vbar class="user-split"></vbar>
+            <li class="menu-item"><a href="javascript:;"> 找公司</a></li>
+        </ul>
+        <div class="search-bar">
+            <div class="enter-bar">
+                <input type="text" placeholder="請輸入關鍵字" maxlength="50" class="search-keyword" value="">
+            </div>
+            <div class="search-btn">
+                <a type="submit" class="submiter" id="index_submit">搜索</a>
+            </div>
+            <div class="re-trade">
+                <a type="submit" rel="nofollow" href="javascript:;">發佈買賣看板</a>
+            </div>
+        </div>
+        <div class="top-search cf">
+            <div class="search-hots">
+                <span id="hotKeywords">熱門關鍵字：</span>
+                <a href="javascript:;" onclick="clickCount('原子筆','')" target="_blank">原子筆</a>
+                <a href="javascript:;" onclick="clickCount('鑰匙圈','')" target="_blank">鑰匙圈</a>
+                <a href="javascript:;" onclick="clickCount('禮贈品','')" target="_blank">禮贈品</a>
+                <a href="javascript:;" onclick="clickCount('廣告贈品筆','')" target="_blank">廣告贈品筆</a>
+                <a href="javascript:;" onclick="clickCount('壓克力鑽','')" target="_blank">壓克力鑽</a>
+                <a href="javascript:;" class="sea-more" id="tagMore">
+                    更多 &gt;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--搜索-->
+<div>
+</div>
+
+<script src="Js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    header{
+        border-bottom: 1px solid #e4e4e4;
+        background: #f3f3f3;
+        height: 27px;
+        min-width: 990px;
+        font: 12px/1.8 Tahoma,Arial,"宋体","新細明體","Arial Unicode MS",sans-serif;
+    }
+
+    .top{
+        width: 990px;
+        height: 100%;
+        margin:0 auto;
+    }
+
+    .top a{
+        color: #666;
+    }
+
+    .top a:hover{
+        color: #ffA500;
+    }
+
+    .top .menu-item{
+        float: left;
+        padding: 0 10px;
+        margin-left: -1px;
+    }
+
+    .top li{
+        height: 100%;
+        line-height: 27px;
+        position: relative;
+    }
+
+    /*会员登陆*/
+    .user-nav{
+        float: left;
+        margin-left: 5px;
+        height: 100%;
+    }
+
+    .user-nav .first{
+        padding-left: 0;
+    }
+
+    .user-nav .first a{
+        color: #1e71c6
+    }
+
+    .user-split{
+        position: absolute;
+        height: 12px;
+        line-height: 27px;
+        border-left: 1px solid #999;
+        top: 7px;
+    }
+
+    .mobile-search-nav{
+        display: none;
+    }
+
+    /*站点导航*/
+    .site-nav{
+        float: right;
+    }
+
+    .site-nav icart{
+        margin-bottom: -2px;
+        margin-right: 4px;
+    }
+
+    .site-nav .ttnet a,.site-nav .ttnet iarrow{
+        float: left;
+    }
+
+    .site-nav .ttnet .iarrow{
+        top: 11px;
+        margin: 0 3px;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+    }
+
+    .site-nav .ttnet .iarrow-hover{
+        top:13px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+    }
+
+    .site-nav .ttnet .a-hover{
+        color: #ffA500;
+    }
+
+    .moblie-menu-wrap{
+        display: none;
+    }
+
+    .mobile-inquiry-cart{
+        display: none;
+    }
+
+    .search-area{
+        height: 105px;
+        position: relative;
+    }
+
+    .search-area .search{
+        width: 650px;
+        position: absolute;
+        top: 18px;
+        right: 0;
+    }
+
+    .search-area .logo{
+        display: block;
+        width: 195px;
+        height: 60px;
+        background: url(../Img/zh-logo-tw.png) 0 -60px;
+        text-indent: -999px;
+        overflow: hidden;
+        top: 20px;
+        position: absolute;
+        left:0;
+    }
+
+    .search-area .search .ser-tab {
+        height: 18px;
+        margin-bottom: 4px;
+    }
+
+    .search-area .search-bar {
+        background: #1e5fcc;
+        width: 644px;
+        height: 28px;
+        padding: 3px;
+        position: relative;
+    }
+
+    .search-area .search-bar .enter-bar {
+        height: 28px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+
+    .search-area .search-keyword {
+        height: 28px;
+        line-height: 28px;
+        width: 372px;
+        border: 0;
+        outline: 0;
+        padding: 0 0 0 5px;
+        margin: 0;
+        color: #666;
+    }
+
+    .search-area .search-btn {
+        width: 100px;
+        height: 28px;
+        overflow: hidden;
+        position: absolute;
+        top: 3px;
+        left: 380px;
+    }
+
+    .search-area .search-btn .submiter, .search-arear .re-trade, #md-nav .myttnet .my-btn {
+        background-image: url(../Img/sprite.png);
+        background-repeat: no-repeat;
+    }
+
+    .search-area .search-btn .submiter {
+        display: block;
+        width: 100px;
+        height: 28px;
+        border: 0;
+        text-indent: -9999em;
+        outline: 0;
+        cursor: pointer;
+        background-position: 0 -40px;
+    }
+
+    .search-area .re-trade {
+        display: inline-block;
+        width: 122px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 39px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        background-position: -104px -40px;
+        zoom: 1;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+
+    .search-area .re-trade a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .search-area .top-search {
+        width: 600px;
+        padding-right: 50px;
+        margin-top: 4px;
+        height: 18px;
+        line-height: 18px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .search-area .top-search span {
+        float: left;
+        color: #999;
+    }
+}
