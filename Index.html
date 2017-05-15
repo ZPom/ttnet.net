@@ -10,8 +10,8 @@
     <script src="Js/jquery.extends.js"></script>
     <link href="Css/icon.css" rel="stylesheet">
     <link href="Css/index.css" rel="stylesheet">
-    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="Css/tablets.css"/>
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="Css/desktop.css"/>
+    <link rel="stylesheet" media="only screen and (max-width: 1024px)" href="Css/tablets.css"/>
+    <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="Css/desktop.css"/>
 </head>
 <body>
 <!--头部-->
@@ -52,6 +52,7 @@
     </div>
 </header>
 
+<!--搜索-->
 <div class="search-area top col-12 col-m-12">
     <div class="logo"></div>
     <div class="search">
@@ -89,8 +90,98 @@
 </div>
 
 
-<!--搜索-->
-<div>
+<!--导航-->
+<div class="nav-wrap col-12 col-m-12">
+    <nav class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="javascript:;" class="current">首頁</a></li>
+            <li><a href="javascript:;">產品</a></li>
+            <li><a href="javascript:;">買賣看板</a></li>
+            <li><a href="javascript:;">展覽&活動</a></li>
+            <li><a href="javascript:;">貿易專刊</a></li>
+        </ul>
+        <div class="nav-vo"><a href="javascript:;" class="my-btn">我的文筆</a></div>
+    </nav>
+</div>
+
+<!--内容-->
+<div class="home-content">
+    <div class="main-head">
+        <!--产品导航-->
+        <aside class="category"  id="category" tabindex="0">
+            <h2>
+                <a href="javascript:;">產品分類</a>
+            </h2>
+            <ul class="category-catlog">
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">禮品 & 工藝品<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">家用品<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">五金製品<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">服飾 & 服飾輔料<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">燈光照明<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">辦公 & 文具用品<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">包裝材料 & 紙<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">時尚配件<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">運動, 休閒 & 娛樂<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">箱 & 袋<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">塑膠 & 橡膠<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">工具 & 測量儀器<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">交通運輸<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catlog-item"> <a href="javascript:;" class="item-link">電子 & 電工<iarrow class="iarrow"></iarrow></a></li>
+                <li class="catelog-more"><a href="javascript:;" class="more-link">更多分類 <span class="icon-more"></span></a></li>
+                <div class="open-switch" id="open-switch" tabindex="0"><iarrow class="iarrow" id="open-iarrow"></iarrow></div>
+            </ul>
+        </aside>
+
+        <article class="mod-banner">
+            <div class="con-wrap">
+                <figure class="home-banner">
+                    <a href="javascript:;"><img src="Img/yxt.jpeg" width="590" height="220" title="banner" alt="banner"></a>
+                </figure>
+                <figure class="banner-bfhq">
+                    <a href="javascript:;"><img src="Img/bfhq.jpg" width="190" height="220" title="banner" alt="banner"></a>
+                </figure>
+            </div>
+            <div class="con-wrap">
+                <div class="pro-con">
+                    <ul class="pro-list">
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/1.jpeg" width="100" height="75"><span>福袋</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/2.jpeg" width="100" height="75"><span>超音波塑膠熔接機</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/3.jpeg" width="100" height="75"><span>CNC複合式車床加工製品</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/4.jpeg" width="100" height="75"><span>CNC車床加工</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/5.jpeg" width="100" height="75"><span>電池槽蓋零件</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/6.jpeg" width="100" height="75"><span>門把手</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/7.jpeg" width="100" height="75"><span>玻璃夾</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="Img/pro-con/8.jpeg" width="100" height="75"><span>安達產品責任險</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-bar">
+                    <div class="mod-pre">
+                        <ul>
+                            <li class="gift"><a href="javascript:;">禮贈品區<</a> </li>
+                            <li class="purchase"><a href="javascript:;">禮贈品區<</a> </li>
+                            <li class="saving"><a href="javascript:;">禮贈品區<</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
 </div>
 
 <script src="Js/index.js"></script>

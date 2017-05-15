@@ -1,5 +1,5 @@
-/* For tablets: (min-width: 600px) and*/
-@media only screen and (max-width: 768px) {
+/* For tablets: (min-width: 768px) and*/
+@media only screen and (max-width: 1024px) {
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -12,17 +12,20 @@
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+    html,body{
+        min-width: 768px;
+    }
+
 
     header{
         border-bottom: 1px solid #e4e4e4;
         background: #f3f3f3;
         height: 30px;
-        min-width: 600px;
         font: 14px/1.8 Tahoma,Arial,"宋体","新細明體","Arial Unicode MS",sans-serif;
     }
 
     .top{
-        width: 600px;
+        width: 768px;
         height: 100%;
         margin:0 auto;
     }
@@ -74,7 +77,6 @@
     .mobile-search-nav{
         float: right;
         position: relative;
-        right: 10px;
     }
 
     .mobile-search-nav .search-input{
@@ -86,20 +88,24 @@
         outline:none;
         top:1px;
         width: 0;
-        -webkit-transition: all .2s;
+        right: -15px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
         text-indent: 10px;
     }
 
     .mobile-search-nav .search-input-show{
         /*border: 1px solid #999;*/
-        width: 173px;
+        width: 250px;
     }
 
     .mobile-search-nav isearch{
         float: right;
         position: relative;
         top: 7px;
-        left: -22px;
+        left: -6px;
     }
 
     /*站点导航*/
@@ -111,7 +117,6 @@
         float: right;
         overflow: hidden;
         position: relative;
-        right: 30px;
         top: 2px;
     }
 
@@ -127,10 +132,10 @@
         top: 5px;
         left:-10px;
         cursor: pointer;
-        -webkit-transition:all .3s;
-        -o-transition:all .3s;
-        -moz-transition: all .3s;
-        transition:all .3s;
+        -webkit-transition:all .8s;
+        -o-transition:all .8s;
+        -moz-transition: all .8s;
+        transition:all .8s;
     }
 
     .moblie-menu-hover{
@@ -145,7 +150,6 @@
         float: right;
         width: 35px;
         height: 100%;
-        right: 30px;
     }
 
     .mobile-site-nav{
@@ -159,10 +163,12 @@
         -webkit-transition: height .3s;
         -moz-transition: height .3s;
         -o-transition: height .3s;
+        background-color: #f3f3f3;
+        z-index: 100;
     }
 
     .mobile-site-nav-show{
-        height: 105px;
+        height: 90px;
     }
 
     .mobile-site-nav li{
@@ -174,5 +180,222 @@
     /*desktop搜索区域*/
     .search-area{
         display: none;
+    }
+
+    /*nav*/
+    .nav-wrap{
+        height: 40px;
+        font-size: 16px;
+        font-family: "Microsoft Yahei","Hiragino Sans GB",sans-serif;
+        background-color: #1e71c6;
+        overflow: hidden;
+        margin-right: 50px;
+    }
+
+    .nav-menu{
+        width: 768px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .nav-menu .nav-list li{
+        float: left;
+    }
+
+    .nav-menu .nav-list .current{
+        background-color: #1648b3;
+    }
+
+    .nav-menu a{
+        display: block;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 25px;
+        color: #fff;
+    }
+
+    .nav-vo{
+        width: 110px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-vo .my-btn{
+        display: block;
+        width: 80px;
+        padding-left: 30px;
+        height: 40px;
+        line-height: 40px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        background-position: -270px -82px;
+        color: #fff;
+        background-image: url(../Img/sprite.png);
+        background-repeat: no-repeat;
+    }
+
+    /*内容*/
+    .home-content{
+        width: 768px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .main-head{
+        margin-bottom: 20px;
+        display: inline-table;
+    }
+
+    .main-head .category{
+        position: fixed;
+        left: -155px;
+        display: inline;
+        width: 153px;
+        float: left;
+        margin-right: 10px;
+        transition: left .3s;
+        outline:none;
+        z-index: 999;
+        background-color: #ffffff;
+        box-shadow:2px 2px 5px #888888
+    }
+
+    .main-head .category-show{
+        left:0;
+    }
+
+    .category-catlog .open-switch{
+        position: absolute;
+        width: 20px;
+        height: 119px;
+        right: -21px;
+        border: 1px solid #eee;
+        border-left: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        top: 181px;
+        background-color: gainsboro;
+        cursor: pointer;
+        outline:none;
+    }
+
+    .open-switch .iarrow{
+        width: 12px;
+        height: 12px;
+        border-right: 2px solid #999;
+        border-bottom: 2px solid #999;
+        border-bottom-right-radius: 5px;
+        top: 50px;
+        right: 0;
+        transition: all .3s;
+        transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .open-switch .iarrow-hover{
+        border-color: #ffA500;
+        transform: rotate(-225deg);
+        -o-transform: rotate(-225deg);
+        -moz-transform: rotate(-225deg);
+        -webkit-transform: rotate(-225deg);
+        right: -6px;
+    }
+
+    .category h2{
+        text-align: center;
+        font: 16px/1.5 '\5FAE\8F6F\96C5\9ED1',sans-serif;
+        color: #1e71c6;
+        font-weight: 700;
+        border-bottom: 2px solid #457fdf;
+        padding: 1px 0 5px 0;
+    }
+
+    .category .category-catlog{
+        font: 13px/1.5 '\5FAE\8F6F\96C5\9ED1',sans-serif;
+        display: inline-table;
+    }
+
+    .category .category-catlog .item-link{
+        border-bottom: 1px solid #eee;
+        padding: 5px 0 5px 5px;
+        color: #444;
+        display: block;
+        text-decoration: none;
+    }
+
+    .category .category-catlog .item-link iarrow{
+        width: 5px;
+        height: 5px;
+        float: right;
+        top: 7px;
+        margin-right: 6px;
+        transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .category .catlog-item .item-link:hover{
+        color: #ffA500;
+    }
+
+    .category-catlog .catlog-item,.category-catlog .catelog-more{
+        float: left;
+        width: 150px;
+    }
+
+    .category-catlog .catelog-more{
+        padding: 5px 0 5px 5px;
+    }
+
+    .catelog-more .icon-more{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        cursor: pointer;
+        background: url(../Img/home-sprite.png) 0 -49px no-repeat;
+    }
+
+    .catelog-more .more-link{
+        position: relative;
+        border-bottom: 1px solid #eee;
+        display: block;
+        text-decoration: none;
+        color: #1e71c6;
+    }
+
+    .mod-banner{
+        width: 790px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .mod-banner .con-wrap{
+        width: 790px;
+        display: inline-block;
+    }
+
+    .mod-banner .con-wrap .home-banner{
+        position: relative;
+        width: 590px;
+        height: 220px;
+        overflow: hidden;
+        float: left;
+    }
+
+    .mod-banner .con-wrap .banner-bfhq{
+        width: 190px;
+        height: 220px;
+        margin-left: 10px;
+        float: left;
     }
 }

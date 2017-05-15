@@ -35,4 +35,23 @@
         $("#moblie-menu").removeClass("moblie-menu-hover");
         $("#mobile-site-nav").removeClass("mobile-site-nav-show");
     })
+
+    // 分类开关
+    $("#open-switch").click(function () {
+        if($(".category").position().left >=0){
+            $("#open-iarrow").removeClass("iarrow-hover");
+            $("#category").removeClass("category-show");
+        }else{
+            $("#open-iarrow").addClass("iarrow-hover");
+            $("#category").addClass("category-show");
+        }
+    })
+
+    $("#open-switch, #category").focus(function () {
+        $("#open-iarrow").addClass("iarrow-hover");
+        $("#category").addClass("category-show");
+    }).blur(function () {
+        $("#open-iarrow").removeClass("iarrow-hover");
+        $("#category").removeClass("category-show");
+    })
 })(jQuery);
